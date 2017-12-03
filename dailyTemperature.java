@@ -28,6 +28,5 @@ public class dailyTemperature {
             stack.push(index);
         }
         return res;
-
     }
 }
