@@ -1,14 +1,12 @@
 package Algorithm;
 
-/**
- * Created by Viral on 1/13/2018.
- */
 public class CountPrimeSetBits {
 
     public static void main(String[] args) {
         System.out.println(countPrimeSetBits(842, 888));
     }
 
+    //function to count prime set bits
     public static int countPrimeSetBits(int L, int R) {
         int result = 0;
         for (int i = L; i <= R; i ++) {
@@ -20,6 +18,7 @@ public class CountPrimeSetBits {
         return result;
     }
 
+    //function to count set bits in an integer
     public static int countSetBits(int n) {
         int c = 0;
         while (n > 0) {
@@ -29,6 +28,7 @@ public class CountPrimeSetBits {
         return c;
     }
 
+    //function to check whether a number is prime
     public static boolean isPrime(int num) {
         if (num < 2) return false;
         if (num == 2) return true;
